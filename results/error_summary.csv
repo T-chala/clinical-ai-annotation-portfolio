@@ -1,0 +1,22 @@
+pmid,error_type,manual_span,manual_category,gold_span,gold_category
+9174057,Span/boundary difference,tumor,DiseaseClass,tumor types,DiseaseClass
+8636252,Span/boundary difference,idiopathic Addison's disease,SpecificDisease,Addison's disease,SpecificDisease
+8636252,Span/boundary difference,idiopathic Addisons disease,SpecificDisease,Addisons disease,SpecificDisease
+8636252,Span/boundary difference,idiopathic adrenocortical insufficiency,SpecificDisease,adrenocortical insufficiency,DiseaseClass
+8931709,Span/boundary difference,attenuated adenomatous polyposis coli,SpecificDisease,adenomatous polyposis coli,SpecificDisease
+9222760,Span/boundary difference,classical galactosemia,Modifier,galactosemia,Modifier
+9271438,Span/boundary difference,tumor,Modifier,von Hippel-Lindau tumor,Modifier
+9271438,Span/boundary difference,tumor,Modifier,von Hippel-Lindau tumor,Modifier
+8789439,Span/boundary difference,severe X-linked recessive neurological disorder,DiseaseClass,X-linked recessive neurological disorder,DiseaseClass
+8636252,Category difference,adrenal insufficiency,Specific Disease,adrenal insufficiency,DiseaseClass
+8636252,Category difference,adrenal insufficiency,Specific Disease,adrenal insufficiency,DiseaseClass
+8824873,Category difference,Huntington disease,Specific Disease,Huntington disease,Modifier
+8808605,Gold-only omission,,,enzyme deficiency,DiseaseClass
+8755645,Gold-only omission,,,inherited human disorder,DiseaseClass
+9072974,Gold-only omission,,,metastasis,DiseaseClass
+8843194,Gold-only omission,,,inherited human disease,DiseaseClass
+9241281,Gold-only omission,,,cancer-associated diseases,DiseaseClass
+8782829,Gold-only omission,,,microsatellite instability,SpecificDisease
+9066888,Gold-only omission,,,defective formation of type II collagen,DiseaseClass
+9083764,Gold-only omission,,,recessively inherited condition,DiseaseClass
+9056547,Gold-only omission,,,PLP-associated disease,DiseaseClass
