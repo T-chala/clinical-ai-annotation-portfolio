@@ -3,6 +3,12 @@
 ## Overview
 A portfolio project demonstrating manual clinical text annotation and annotation-quality analysis using the **NCBI Disease Corpus**. I independently annotated 50 biomedical abstracts and compared my annotations with the corresponding gold-standard annotations.
 
+## About Me
+
+I am a licensed Medical Doctor with 6+ years of clinical experience in Ethiopia, including general practice, pediatrics, emergency, inpatient and outpatient care.
+
+I am transitioning into healthcare data and medical AI, applying my clinical expertise to data annotation, clinical text analysis, and Medical AI evaluation.
+
 ### Skills demonstrated
 - clinical disease-entity recognition
 - annotation guideline interpretation
@@ -26,18 +32,20 @@ Manual annotations were compared with gold annotations using normalized **PMID +
 
 ## Results
 
-| Metric | Result |
-|---|---:|
-| Abstracts | 50 |
-| Gold annotations | 385 |
-| Manual annotations | 376 |
-| True positives | 363 |
-| False positives | 0 |
-| False negatives | 9 |
-| Precision | 96.8% |
-| Recall | 94.5% |
-| F1 | 95.6% |
-| Abstracts with exact annotation-set agreement | 34/50 |
+| Metric                                        | Result |
+| --------------------------------------------- | -----: |
+| Abstracts                                     |     50 |
+| Gold annotations                              |    385 |
+| Manual annotations                            |    376 |
+| Exact span + category matches                 |    364 |
+| Span/boundary differences                     |      9 |
+| Category differences                          |      3 |
+| Gold-only omissions                           |      9 |
+| Manual-only annotations                       |      0 |
+| Exact-match precision                         |  96.8% |
+| Exact-match recall                            |  94.5% |
+| Exact-match F1                                |  95.6% |
+| Abstracts with exact annotation-set agreement |  34/50 |
 
 ### Category-level results
 
@@ -63,8 +71,7 @@ clinical-ai-annotation-portfolio/
 │   ├── methodology.md
 │   └── error_taxonomy.md
 ├── annotations/
-│   ├── manual_annotations.jsonl
-│   └── gold_annotations.jsonl
+│   ├── manual_annotations.jsonl  
 ├── analysis/
 │   └── annotation_quality_report.md
 └── results/
@@ -72,4 +79,4 @@ clinical-ai-annotation-portfolio/
     └── error_summary.csv
 ```
 ## Final comparison summary
-The 50-abstract comparison contains **376** manual annotations and **385** gold annotations: **364** exact matches, 9 span/boundary differences, 3 category differences, 9 gold-only omissions, and 0 manual-only annotations. Exact-match precision is **96.8%**, recall **94.5%**, and F1 **95.6%**. When boundary and category disagreements are separated from genuine omissions, **97.7%** of gold mentions have a corresponding manual annotation.
+The 50-abstract comparison contains **376** manual annotations and **385** gold annotations: **364** exact matches, 9 span/boundary differences, 3 category differences, 9 gold-only omissions, and 0 manual-only annotations. Exact-match precision is **96.8%**, recall **94.5%**, and F1 **95.6%**. When boundary and category disagreements are separated from genuine omissions, **97.7%** of gold annotations have a corresponding manual annotation.
