@@ -19,6 +19,7 @@ A portfolio project demonstrating manual clinical text annotation and annotation
 - Submitted manual annotations: **376**
 
 The original NCBI Disease Corpus and its gold-standard annotations are not redistributed in this repository. The project uses the corpus as an external reference dataset, while this repository contains my independently produced annotation and analysis artifacts. Users should obtain the original corpus directly from NCBI and follow the applicable terms governing its use and redistribution.
+https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/
 
 ## Method
 Manual annotations were compared with gold annotations using normalized **PMID + text span + category** matching. Whitespace and case were normalized; duplicate mentions were retained rather than collapsed.
@@ -29,7 +30,7 @@ Manual annotations were compared with gold annotations using normalized **PMID +
 |---|---:|
 | Abstracts | 50 |
 | Gold annotations | 385 |
-| Manual annotations | 375 |
+| Manual annotations | 376 |
 | True positives | 363 |
 | False positives | 0 |
 | False negatives | 9 |
@@ -69,3 +70,6 @@ clinical-ai-annotation-portfolio/
 └── results/
     ├── agreement_summary.csv
     └── error_summary.csv
+```
+## Final comparison summary
+The 50-abstract comparison contains **376** manual annotations and **385** gold annotations: **364** exact matches, 9 span/boundary differences, 3 category differences, 9 gold-only omissions, and 0 manual-only annotations. Exact-match precision is **96.8%**, recall **94.5%**, and F1 **95.6%**. When boundary and category disagreements are separated from genuine omissions, **97.7%** of gold mentions have a corresponding manual annotation.
